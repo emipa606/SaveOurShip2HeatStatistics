@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!--	 First step of this mod:
- * Heat dissipated by heat sinks is a constant known as ShipCombatManager.HeatPushMult, every heatVentTick of the heatsink/radiator.
- * however, as of 09/07/20, ShipCombatManager is protected from external access due to the internal visibility.
- * Updates to this value WILL NEED manual update, until ShipCombatManager becomes public.
- *
- * we add this value to heatsink and radiators xml (ir any new heat management building), as it should already be the case. -->
+	<!-- those patches add placeholder stat values to heatsinks and radiators, those are defined in defs/statDefs-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and heatVentTick and compClass="CompShipHeatSink"]/../../statBases</xpath>
 		<value>

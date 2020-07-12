@@ -14,7 +14,7 @@ namespace SOS2HS
     */
 
     [StaticConstructorOnStartup]
-    public static class HeatsinkStatistics
+    public static class HeatStatistics
     {
         public static float GetMaxHeatPushed()
         {
@@ -215,10 +215,6 @@ namespace SOS2HS
                 return 1;
             }
             return shipHeat[0].heatVentTick;
-        }
-
-        static HeatsinkStatistics()
-        {
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- HEATSINK -->
 	<StatDef>
 		<defName>SOS2HS_MaxHeatOutputPerSecond</defName>
 		<label>max heat output per second</label>
@@ -13,9 +14,10 @@
 		<showIfUndefined>false</showIfUndefined>
 		<showIfModsLoaded>
 			<li>kentington.saveourship2</li>
-			<li>helldragger.sos2heatsinkstatistics</li>
+			<li>helldragger.sos2heatstatistics</li>
 		</showIfModsLoaded>
 	</StatDef>
+	<!-- RADIATOR -->
 	<StatDef>
 		<defName>SOS2HS_CurrentCoolingPerSecond</defName>
 		<label>Current cooling per second</label>
@@ -28,7 +30,7 @@
 		<showIfUndefined>false</showIfUndefined>
 		<showIfModsLoaded>
 			<li>kentington.saveourship2</li>
-			<li>helldragger.sos2heatsinkstatistics</li>
+			<li>helldragger.sos2heatstatistics</li>
 		</showIfModsLoaded>
 	</StatDef>
 	<StatDef>
@@ -43,7 +45,7 @@
 		<showIfUndefined>false</showIfUndefined>
 		<showIfModsLoaded>
 			<li>kentington.saveourship2</li>
-			<li>helldragger.sos2heatsinkstatistics</li>
+			<li>helldragger.sos2heatstatistics</li>
 		</showIfModsLoaded>
 	</StatDef>
 </Defs>

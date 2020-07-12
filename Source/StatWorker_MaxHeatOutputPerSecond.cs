@@ -27,18 +27,18 @@ namespace SOS2HS
                 Log.Error(string.Concat("Getting HeatVented stat for ", req.Def, " without concrete thing. This always returns 1."));
                 return 1;
             }
-            return HeatsinkStatistics.GetMaxHeatOutputPerSecond(req, applyPostProcess);
+            return HeatStatistics.GetMaxHeatOutputPerSecond(req, applyPostProcess);
         }
 
         public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
         {
             StringBuilder stringBuilder = new StringBuilder();
 
-            var heatPushed = HeatsinkStatistics.GetMaxHeatPushed();
+            var heatPushed = HeatStatistics.GetMaxHeatPushed();
             stringBuilder.AppendLine("StatsReport_SOS2HS_MaxHeatPushed".Translate());
             stringBuilder.AppendLine("  " + heatPushed + " C.m^-2");
 
-            var heatPushTick = HeatsinkStatistics.GetHeatVentTick(req);
+            var heatPushTick = HeatStatistics.GetHeatVentTick(req);
             stringBuilder.AppendLine("StatsReport_SOS2HS_HeatPushTickInterval".Translate());
             stringBuilder.AppendLine("  " + heatPushTick + " ");
 
@@ -79,7 +79,7 @@ namespace SOS2HS
 
         public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense, StatRequest optionalReq, bool finalized = true)
         {
-            return string.Format("{0} C.s^-1", HeatsinkStatistics.GetMaxHeatOutputPerSecond(optionalReq).ToString("0.###"));
+            return string.Format("{0} C.s^-1", HeatStatistics.GetMaxHeatOutputPerSecond(optionalReq).ToString("0.###"));
         }
 
         public override bool ShouldShowFor(StatRequest req)

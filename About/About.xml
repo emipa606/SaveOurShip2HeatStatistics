@@ -1,13 +1,24 @@
 <ModMetaData>
-	<name>Save our ship 2 - Heatsink statistics</name>
+	<name>Save our ship 2 - Heat statistics</name>
 	<author>Helldragger</author>
-	<packageId>helldragger.sos2heatsinkstatistics</packageId>
+	<packageId>helldragger.sos2heatstatistics</packageId>
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
 	<description>
-		V1.0
-		This mod adds heat dispersion statistics, allowing you to calculate the amount of radiators needed to vent their temperature safely.
+Need to know if your heatsinks will explode at the first battle on your new shiny space vessel?
+Wanna reduce the space footprint of your 200 tiles wide and counting AC system as safely as possible?
+Or maybe you just like stats and dwelving deeper in the game internal systems?
+
+Then this mod is for you, it adds various fully dynamic and explained statistics to Save our ship 2 heat management buildings:
+
+- Heatsinks now have a max heat output statistic.
+Now you know how hot they will go once they store at least 1 unit of heat.
+- Radiators now have a current and max cooling statistic. Efficiency is included in the formula.
+You will now be able to check how much of those babies you need to deal with your army of heatsinks safely.
+
+The mod is under MIT licence aka. Do whatever you want with it! Credit is always appreciated though! :D
+The source can also be found on the following github: https://github.com/helldragger/SOS2-HeatStatistics
 	</description>
 	<modDependencies>
 		<li>

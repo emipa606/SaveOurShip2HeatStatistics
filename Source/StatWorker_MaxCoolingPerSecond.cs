@@ -27,7 +27,7 @@ namespace SOS2HS
                 Log.Error(string.Concat("Getting MaxCoolingPerSecond stat for ", req.Def, " without concrete thing. This always returns 1."));
                 return 1;
             }
-            return HeatsinkStatistics.GetMaxCoolingPerSecond(req, applyPostProcess);
+            return HeatStatistics.GetMaxCoolingPerSecond(req, applyPostProcess);
         }
 
         public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
@@ -120,7 +120,7 @@ namespace SOS2HS
 
         public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense, StatRequest optionalReq, bool finalized = true)
         {
-            return string.Format("{0} C", HeatsinkStatistics.GetMaxCoolingPerSecond(optionalReq).ToString("0.###"));
+            return string.Format("{0} C", HeatStatistics.GetMaxCoolingPerSecond(optionalReq).ToString("0.###"));
         }
 
         public override bool ShouldShowFor(StatRequest req)

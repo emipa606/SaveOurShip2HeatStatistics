@@ -1,0 +1,4 @@
+﻿obj/*
+*.sln
+*.csproj*
+.vs/*
