@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Radiators / coolers (COOLING SYSTEM) -->
+	<StatsReport_SOS2HS_HeatRadiatedPerSecondExplanation></StatsReport_SOS2HS_HeatRadiatedPerSecondExplanation>
+	<StatsReport_SOS2HS_HeatRadiated></StatsReport_SOS2HS_HeatRadiated>
+	<StatsReport_SOS2HS_CooledRoomTemp>Temperature in the cool side</StatsReport_SOS2HS_CooledRoomTemp>
+	<StatsReport_SOS2HS_ExteriorRoomTemp>Temperature in the hot side</StatsReport_SOS2HS_ExteriorRoomTemp>
+	<StatsReport_SOS2HS_TargetTemperature>Current target temperature for the cold side</StatsReport_SOS2HS_TargetTemperature>
+	<StatsReport_SOS2HS_EfficiencyLossPerDegree>Cooler efficiency modifier</StatsReport_SOS2HS_EfficiencyLossPerDegree>
+	<StatsReport_SOS2HS_EnergyPerSecond>Convertible energy per second</StatsReport_SOS2HS_EnergyPerSecond>
+	<StatsReport_SOS2HS_CooledRoomSurface>Cold side room surface</StatsReport_SOS2HS_CooledRoomSurface>
+	<StatsReport_SOS2HS_CoolingConversionRate>Cooling conversion rate</StatsReport_SOS2HS_CoolingConversionRate>
+
+	<StatsReport_SOS2HS_SidesTempGradient>Temperature difference between both sides</StatsReport_SOS2HS_SidesTempGradient>
+	<StatsReport_SOS2HS_SidesTempGradientEquation>cold - hot</StatsReport_SOS2HS_SidesTempGradientEquation>
+	<StatsReport_SOS2HS_SidesTempGradientEquationNumbers>{0} - {1}</StatsReport_SOS2HS_SidesTempGradientEquationNumbers>
+
+	<StatsReport_SOS2HS_TargetTempDiff>Temperature difference between target and cold side</StatsReport_SOS2HS_TargetTempDiff>
+	<StatsReport_SOS2HS_TargetTempDiffEquation>targetTemp - cooledRoomTemp</StatsReport_SOS2HS_TargetTempDiffEquation>
+	<StatsReport_SOS2HS_TargetTempDiffEquationNumbers>{0} - {1}</StatsReport_SOS2HS_TargetTempDiffEquationNumbers>
+
+	<StatsReport_SOS2HS_Efficiency>Current efficiency</StatsReport_SOS2HS_Efficiency>
+	<StatsReport_SOS2HS_EfficiencyEquation>1 - sidesTempDiff * efficiencyLossPerDegree</StatsReport_SOS2HS_EfficiencyEquation>
+	<StatsReport_SOS2HS_EfficiencyEquationNumbers>1 - {0} * {1}</StatsReport_SOS2HS_EfficiencyEquationNumbers>
+
+	<StatsReport_SOS2HS_MaxCooling>Maximum cooling power</StatsReport_SOS2HS_MaxCooling>
+	<StatsReport_SOS2HS_MaxCoolingEquation>energyPerSecond * efficiency / roomSurface * coolingConversionRate</StatsReport_SOS2HS_MaxCoolingEquation>
+	<StatsReport_SOS2HS_MaxCoolingEquationNumbers>{0} * {1} / {2} * {3}</StatsReport_SOS2HS_MaxCoolingEquationNumbers>
+
+	<StatsReport_SOS2HS_MaxCoolingPerSecond>Maximum cooling power per second</StatsReport_SOS2HS_MaxCoolingPerSecond>
+	<StatsReport_SOS2HS_MaxCoolingPerSecondEquation>energyPerSecond * efficiency / roomSurface * coolingConversionRate * 60</StatsReport_SOS2HS_MaxCoolingPerSecondEquation>
+	<StatsReport_SOS2HS_MaxCoolingPerSecondEquationNumbers>{0} * {1} / {2} * {3} * 60</StatsReport_SOS2HS_MaxCoolingPerSecondEquationNumbers>
+
+	<StatsReport_SOS2HS_ActualCoolingPerSecond>Current cooling per second</StatsReport_SOS2HS_ActualCoolingPerSecond>
+	<StatsReport_SOS2HS_ActualCoolingPerSecondEquation>min( max( targetTempDiff, maxCooling ), 0 ) * 60</StatsReport_SOS2HS_ActualCoolingPerSecondEquation>
+	<StatsReport_SOS2HS_ActualCoolingPerSecondEquationNumbers>min( max( {0}, {1}), 0 ) * 60</StatsReport_SOS2HS_ActualCoolingPerSecondEquationNumbers>
+
+	<!-- Heatsinks (SOS2 HEAT SYSTEM) -->
+	<StatsReport_SOS2HS_MaxHeatPushed>Max heat pushed</StatsReport_SOS2HS_MaxHeatPushed>
+
+	<StatsReport_SOS2HS_HeatPushTickInterval>Heat push tick interval</StatsReport_SOS2HS_HeatPushTickInterval>
+
+	<StatsReport_SOS2HS_RoomSurface>Room surface</StatsReport_SOS2HS_RoomSurface>
+
+	<StatsReport_SOS2HS_HeatPushedPerSecond>Max heat pushed per second</StatsReport_SOS2HS_HeatPushedPerSecond>
+	<StatsReport_SOS2HS_HeatPushedPerSecondEquation>maxHeatPushed / HeatPushTickInterval * 60</StatsReport_SOS2HS_HeatPushedPerSecondEquation>
+	<StatsReport_SOS2HS_HeatPushedPerSecondEquationNumbers>{0} / {1} * 60</StatsReport_SOS2HS_HeatPushedPerSecondEquationNumbers>
+
+	<StatsReport_SOS2HS_HeatOutputPerSecond>Max heat output per second</StatsReport_SOS2HS_HeatOutputPerSecond>
+	<StatsReport_SOS2HS_HeatOutputPerSecondEquation>maxHeatPushedPerSecond / roomSurface </StatsReport_SOS2HS_HeatOutputPerSecondEquation>
+	<StatsReport_SOS2HS_HeatOutputPerSecondEquationNumbers>{0} / {1}</StatsReport_SOS2HS_HeatOutputPerSecondEquationNumbers>
+</LanguageData>

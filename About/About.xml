@@ -1,0 +1,22 @@
+<ModMetaData>
+	<name>Save our ship 2 - Heatsink statistics</name>
+	<author>Helldragger</author>
+	<packageId>helldragger.sos2heatsinkstatistics</packageId>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<description>
+		V1.0
+		This mod adds heat dispersion statistics, allowing you to calculate the amount of radiators needed to vent their temperature safely.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>kentington.saveourship2</packageId>
+			<displayName>Save Our Ship 2</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/1909914131</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>kentington.saveourship2</li>
+	</loadAfter>
+</ModMetaData>

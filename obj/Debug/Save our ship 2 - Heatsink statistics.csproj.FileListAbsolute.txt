@@ -1,0 +1,6 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Save our ship 2 - Heatsink statistics\obj\Debug\Save our ship 2 - Heatsink statistics.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Save our ship 2 - Heatsink statistics\obj\Debug\Save our ship 2 - Heatsink statistics.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Save our ship 2 - Heatsink statistics\Assemblies\SOS2HeatsinkStatistics.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Save our ship 2 - Heatsink statistics\Assemblies\SOS2HeatsinkStatistics.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Save our ship 2 - Heatsink statistics\obj\Debug\SOS2HeatsinkStatistics.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Save our ship 2 - Heatsink statistics\obj\Debug\SOS2HeatsinkStatistics.pdb
