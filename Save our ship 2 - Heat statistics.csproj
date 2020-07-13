@@ -72,10 +72,17 @@
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="About\preview.png" />
+    <Content Include="About\PublishedFileId.txt" />
+    <Content Include="About\statistics_heatsink.png" />
+    <Content Include="About\statistics_radiator.png" />
+    <Content Include="Assemblies\SOS2HeatStatistics.dll" />
+    <Content Include="Assemblies\SOS2HeatStatistics.pdb" />
     <Content Include="Defs\StatDef\HeatStatistics.xml" />
     <Content Include="Defs\Stats\StatCategories.xml" />
     <Content Include="Languages\English\Keyed\SOS2HS_Keys.xml" />
     <Content Include="Patches\AddPlaceholderForDynamicStats.xml" />
+    <Content Include=".gitignore" />
+    <Content Include="_PublisherPlus.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LICENSE" />
