@@ -14,8 +14,13 @@ Then this mod is for you, it adds various fully dynamic and explained statistics
 
 - Heatsinks now have a max heat output statistic.
 Now you know how hot they will go once they store at least 1 unit of heat.
+
 - Radiators now have a current and max cooling statistic. Efficiency is included in the formula.
 You will now be able to check how much of those babies you need to deal with your army of heatsinks safely.
+
+
+"Save our ship 2 - Extensions" compatibility is completed by the base mod "RimWorld - Heat Statistics", check it out! (The subzero cooler behaves as a heat pusher)
+
 
 The mod is under MIT licence aka. Do whatever you want with it! Credit is always appreciated though! :D
 The source can also be found on the following github: https://github.com/helldragger/SOS2-HeatStatistics
@@ -29,5 +34,7 @@ The source can also be found on the following github: https://github.com/helldra
 	</modDependencies>
 	<loadAfter>
 		<li>kentington.saveourship2</li>
+		<li>storm.sos2ex</li>
+		<li>helldragger.heatstatistics</li>
 	</loadAfter>
 </ModMetaData>

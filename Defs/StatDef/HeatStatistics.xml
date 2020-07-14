@@ -2,10 +2,10 @@
 <Defs>
 	<!-- HEATSINK -->
 	<StatDef>
-		<defName>SOS2HS_MaxHeatOutputPerSecond</defName>
+		<defName>SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond</defName>
 		<label>max heat output per second</label>
-		<workerClass>SOS2HS.StatWorker_MaxHeatOutputPerSecond</workerClass>
-		<description>The maximum amount of degrees this building can vent in a room per second.\n\nTake care to add enough radiators to avoid seeing your ventilation system bursting into flames.</description>
+		<workerClass>SOS2HS.StatWorker_SOS2_Heatsink_MaxHeatOutputPerSecond</workerClass>
+		<description>The maximum amount of degrees this building can output in a room per second.\n\nTake care to add enough radiators to avoid seeing your ventilation system bursting into flames.</description>
 		<category>SOS2HS_HeatStatistics</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0</minValue>
@@ -19,10 +19,10 @@
 	</StatDef>
 	<!-- RADIATOR -->
 	<StatDef>
-		<defName>SOS2HS_CurrentCoolingPerSecond</defName>
+		<defName>SOS2HS_SOS2_Radiator_CurrentACPerSecond</defName>
 		<label>Current cooling per second</label>
-		<workerClass>SOS2HS.StatWorker_CurrentCoolingPerSecond</workerClass>
-		<description>The amount of degrees this building is removing from the room on its cold side per second.</description>
+		<workerClass>SOS2HS.StatWorker_SOS2_Radiator_CurrentACPerSecond</workerClass>
+		<description>The amount of degrees this building is controlling from the room on its cold side per second.</description>
 		<category>SOS2HS_HeatStatistics</category>
 		<defaultBaseValue>0</defaultBaseValue>
 		<toStringStyle>FloatThree</toStringStyle>
@@ -34,10 +34,10 @@
 		</showIfModsLoaded>
 	</StatDef>
 	<StatDef>
-		<defName>SOS2HS_MaxCoolingPerSecond</defName>
+		<defName>SOS2HS_SOS2_Radiator_MaxACPerSecond</defName>
 		<label>Max cooling per second</label>
-		<workerClass>SOS2HS.StatWorker_MaxCoolingPerSecond</workerClass>
-		<description>The maximum amount of degrees this building can remove from the room on its cold side per second.</description>
+		<workerClass>SOS2HS.StatWorker_SOS2_Radiator_MaxACPerSecond</workerClass>
+		<description>The maximum amount of degrees this building can control from the room on its cold side per second.</description>
 		<category>SOS2HS_HeatStatistics</category>
 		<defaultBaseValue>0</defaultBaseValue>
 		<toStringStyle>FloatThree</toStringStyle>

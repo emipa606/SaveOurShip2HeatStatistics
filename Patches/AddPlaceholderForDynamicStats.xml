@@ -1,22 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- those patches add placeholder stat values to heatsinks and radiators, those are defined in defs/statDefs-->
+	<!-- SOS2 HEATSINK -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and heatVentTick and compClass="CompShipHeatSink"]/../../statBases</xpath>
 		<value>
-			<SOS2HS_MaxHeatOutputPerSecond>0</SOS2HS_MaxHeatOutputPerSecond>
+			<SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond>0</SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond>
+		</value>
+	</Operation>
+	<!-- SOS2 RADIATOR (COOLERS) -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and ventHeatToSpace]/../../statBases</xpath>
+		<value>
+			<SOS2HS_SOS2_Radiator_CurrentACPerSecond>0</SOS2HS_SOS2_Radiator_CurrentACPerSecond>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and heatVentTick and ventHeatToSpace]/../../statBases</xpath>
+		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and ventHeatToSpace]/../../statBases</xpath>
 		<value>
-			<SOS2HS_CurrentCoolingPerSecond>0</SOS2HS_CurrentCoolingPerSecond>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and heatVentTick and ventHeatToSpace]/../../statBases</xpath>
-		<value>
-			<SOS2HS_MaxCoolingPerSecond>0</SOS2HS_MaxCoolingPerSecond>
+			<SOS2HS_SOS2_Radiator_MaxACPerSecond>0</SOS2HS_SOS2_Radiator_MaxACPerSecond>
 		</value>
 	</Operation>
 </Patch>
