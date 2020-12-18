@@ -15,7 +15,7 @@ namespace SOS2HS
             {
                 return false;
             }
-            return !comp.Props.ventHeatToSpace;
+            return !comp.Props.ventHeatToSpace && !(thing is MinifiedThing);
         }
 
         public override bool IsDisabledFor(Thing thing)
@@ -55,7 +55,7 @@ namespace SOS2HS
 
             var heatPushed = SOS2HS_SOS2_Heatsink.GetMaxHeatPushed();
             var heatPushTick = SOS2HS_SOS2_Heatsink.GetHeatVentTick(req);
-            float surface = req.Thing.Position.GetRoomGroup(req.Thing.Map).CellCount;
+            float surface = SOS2HS_SOS2_Heatsink.GetRoomSurface(req.Thing);
             float heatPushedPerSecond = heatPushed / heatPushTick * 60;
             float heatOutputPerSecond = heatPushedPerSecond / surface;
 

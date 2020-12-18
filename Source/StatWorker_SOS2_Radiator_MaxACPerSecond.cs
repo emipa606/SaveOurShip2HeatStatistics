@@ -10,7 +10,7 @@ namespace SOS2HS
     {
         private bool IsConcernedThing(Thing thing)
         {
-            return thing.TryGetComp<CompTempControl>() != null;
+            return thing.TryGetComp<CompTempControl>() != null && !(thing is MinifiedThing);
         }
 
         public override bool IsDisabledFor(Thing thing)
@@ -57,7 +57,7 @@ namespace SOS2HS
             float extRoomTemp = intVec3_2.GetTemperature(tempController.Map);
             float efficiencyLossPerDegree = 1.0f / 130.0f; // SOS2 internal value, means loss of efficiency for each degree above targettemp, lose 50% at 65C above targetTemp, 100% at 130+
             float energyPerSecond = tempControl.Props.energyPerSecond; // the power of the radiator
-            float roomSurface = intVec3_1.GetRoomGroup(tempController.Map).CellCount; // the power of the radiator
+            float roomSurface = SOS2HS_SOS2_Radiator.GetRoomSurface(req.Thing); 
             float coolingConversionRate = 4.16666651f; // Celsius cooled per JoulesSecond*Meter^2  conversion rate
             float sidesTempGradient = (cooledRoomTemp - extRoomTemp);
             float efficiency = (1f - sidesTempGradient * efficiencyLossPerDegree);

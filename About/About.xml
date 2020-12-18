@@ -3,7 +3,8 @@
 	<author>Helldragger</author>
 	<packageId>helldragger.sos2heatstatistics</packageId>
 	<supportedVersions>
-		<li>1.1</li>
+    <li>1.1</li>
+    <li>1.2</li>
 	</supportedVersions>
 	<description>
 Need to know if your heatsinks will explode at the first battle on your new shiny space vessel?

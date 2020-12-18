@@ -62,13 +62,19 @@ namespace SOS2HS
             IntVec3 intVec3_1 = tempController.Position + IntVec3.North.RotatedBy(tempController.Rotation);
 
             float energyPerSecond = tempControl.Props.energyPerSecond; // the power of the radiator
-            float roomSurface = intVec3_1.GetRoomGroup(tempController.Map).CellCount; // the power of the radiator
+            float roomSurface = GetRoomSurface(req.Thing); // the power of the radiator
             float coolingConversionRate = 4.16666651f; // Celsius cooled per JoulesSecond*Meter^2  conversion rate
             float efficiency = GetCurrentEfficiency(req);
             float maxACPerSecond = energyPerSecond * efficiency / roomSurface * coolingConversionRate; // max cooling power possible
             return maxACPerSecond;
         }
 
+        public static float GetRoomSurface(Thing thing)
+        {
+            IntVec3 intVec3_1 = thing.Position + IntVec3.North.RotatedBy(thing.Rotation);
+
+            return intVec3_1.GetRoom(thing.Map).CellCount;
+        }
 
         public static float GetHeatVentTick(ThingDef def)
         {

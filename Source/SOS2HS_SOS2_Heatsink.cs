@@ -38,15 +38,8 @@ namespace SOS2HS
             var type = ass.GetType("RimWorld.ShipCombatManager");
             var prop = type.GetField("HeatPushMult");
             var heatPushed = (float)prop.GetValue(type) / GetHeatVentTick(req, applyPostProcess);
-            RoomGroup roomGroup = req.Thing.Position.GetRoomGroup(req.Thing.Map);
-            if (roomGroup != null && !roomGroup.UsesOutdoorTemperature)
-            {
-                return heatPushed / roomGroup.CellCount;
-            }
-            else
-            {
-                return 0;
-            }
+            var surface = GetRoomSurface(req.Thing);
+            return heatPushed / surface;
         }
 
         public static float GetMaxHeatOutputPerSecond(StatRequest req, bool applyPostProcess = true)
@@ -54,7 +47,12 @@ namespace SOS2HS
             return GetMaxHeatOutput(req, applyPostProcess) * 60;
         }
 
-        
+
+        public static float GetRoomSurface(Thing thing)
+        {
+            return RegionAndRoomQuery.GetRoom(thing).CellCount;
+        }
+
         public static float GetHeatVentTick(ThingDef def)
         {
             CompProperties_ShipHeat shipHeat = def.GetCompProperties<CompProperties_ShipHeat>();

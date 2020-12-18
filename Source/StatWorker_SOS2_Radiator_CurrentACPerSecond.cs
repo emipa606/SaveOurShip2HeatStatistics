@@ -11,7 +11,7 @@ namespace SOS2HS
     {
         private bool IsConcernedThing(Thing thing)
         {
-            return thing.TryGetComp<CompTempControl>() != null;
+            return thing.TryGetComp<CompTempControl>() != null && !(thing is MinifiedThing);
         }
 
         public override bool IsDisabledFor(Thing thing)
