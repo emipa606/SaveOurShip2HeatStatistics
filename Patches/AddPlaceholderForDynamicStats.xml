@@ -1,23 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- SOS2 HEATSINK -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and heatVentTick and compClass="CompShipHeatSink"]/../../statBases</xpath>
-		<value>
-			<SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond>0</SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond>
-		</value>
-	</Operation>
-	<!-- SOS2 RADIATOR (COOLERS) -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and ventHeatToSpace]/../../statBases</xpath>
-		<value>
-			<SOS2HS_SOS2_Radiator_CurrentACPerSecond>0</SOS2HS_SOS2_Radiator_CurrentACPerSecond>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and ventHeatToSpace]/../../statBases</xpath>
-		<value>
-			<SOS2HS_SOS2_Radiator_MaxACPerSecond>0</SOS2HS_SOS2_Radiator_MaxACPerSecond>
-		</value>
-	</Operation>
+  <!-- SOS2 HEATSINK -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and heatVentTick and compClass="CompShipHeatSink"]/../../statBases</xpath>
+    <value>
+      <SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond>0</SOS2HS_SOS2_Heatsink_MaxHeatOutputPerSecond>
+    </value>
+  </Operation>
+  <!-- SOS2 RADIATOR (COOLERS) -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and ventHeatToSpace]/../../statBases</xpath>
+    <value>
+      <SOS2HS_SOS2_Radiator_CurrentACPerSecond>0</SOS2HS_SOS2_Radiator_CurrentACPerSecond>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_ShipHeat" and ventHeatToSpace]/../../statBases</xpath>
+    <value>
+      <SOS2HS_SOS2_Radiator_MaxACPerSecond>0</SOS2HS_SOS2_Radiator_MaxACPerSecond>
+    </value>
+  </Operation>
 </Patch>
