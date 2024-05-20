@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="SaveOurShip2HeatStatistics_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2803774052</linkUrl>
+		<banner>UpdateInfo/SaveOurShip2HeatStatistics</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="SaveOurShip2HeatStatistics_UpdateInfoBase">
+		<defName>SaveOurShip2HeatStatistics_1_3_1</defName>
+		<date>2024/5/20</date>
+		<content>This mod will not be further updated.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+
